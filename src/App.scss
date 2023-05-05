@@ -37,17 +37,3 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
-
-.menu-items {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-items {
-    display: block;
-  }
-}
-
-.show-menu .menu-items {
-  display: block;
-}
