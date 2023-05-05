@@ -1,0 +1,48 @@
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    .text-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 40rem;
+      margin: 0 1rem;
+      text-align: center;
+      
+      h1 {
+        color: white;
+        margin: 0;
+        font: 400 3.44rem 'Coolvetica';
+      }
+  
+      h2 {
+        color: #8d8d8d;
+        margin: 1.25rem 0 0;
+        font: 400 0.69rem sans-serif;
+        letter-spacing: 0.13rem;
+        animation: fadeIn 1s 1.8s backwards;
+      }
+  
+      .flat-button {
+        color: #ffd700;
+        font: 400 0.81rem sans-serif;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 1.25rem 2.25rem;
+        margin: 2.5rem 0 0;
+        border: 0.13rem solid #ffd700;
+        white-space: nowrap;
+        animation: fadeIn 1s 1.8s backwards;
+        
+        &:hover {
+          background-color: #ffd700;
+          color: #333;
+        }
+      }
+    }
+  }
+  

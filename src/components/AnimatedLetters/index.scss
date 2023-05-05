@@ -1,0 +1,26 @@
+.letter-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    padding-left: 3px;
+}
+
+.letter-animate-hover {
+    display: inline-block;
+    animation-fill-mode: both;
+    min-width: 10px;
+    padding-left: 3px;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+@for $i from 0 through 39 {
+    .letter-animate._#{$i} {
+        animation-delay: #{$i / 17}s;
+    }
+}
