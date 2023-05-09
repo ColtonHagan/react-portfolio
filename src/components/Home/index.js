@@ -3,6 +3,7 @@ import "./index.scss";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
+import Image from "../../assets/images/home-page-image.png"
 
 const Home = () => {
     const [letters, setLetters] = useState("letter-animate");
@@ -22,16 +23,18 @@ const Home = () => {
                     <h1>
                         <AnimatedLetters letterClass={letters} strArray={["H", "i", ","]} idx={10}/> 
                         <br/> 
-                        <AnimatedLetters letterClass={letters} strArray={["I", "\'", "m", " "]} idx={13}/>
+                        <AnimatedLetters letterClass={letters} strArray={["I", "'", "m", " "]} idx={13}/>
                         <AnimatedLetters letterClass={letters} strArray={nameArray} idx={17}/>
                         <br/> 
                         <AnimatedLetters letterClass={letters} strArray={jobArray} idx={23}/>
                     </h1>
-                    <h2>Full Cycle Developer & Web Designer</h2>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <h2>Full Cycle Software Developer & Web Designer</h2>
+                    <div className="button">
+                        <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    </div>
                 </div>
                 <div className="image-zone">
-                    
+                    <img src={Image} alt="guy on computer"/>
                 </div>
             </div>
             <Loader type="triangle-skew-spin" />

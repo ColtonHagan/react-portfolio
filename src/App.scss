@@ -37,3 +37,20 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
+.flat-button {
+  color: #ffd700;
+  font: 400 1.3rem sans-serif;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 1.25rem 2.25rem;
+  border: 0.15rem solid #ffd700;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  animation: fadeIn 1s 1.8s backwards;
+  
+  &:hover {
+    background-color: #ffd700;
+    color: #333;
+  }
+}

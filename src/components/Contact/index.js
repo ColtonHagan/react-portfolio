@@ -1,5 +1,6 @@
+import React from 'react';
 import "./index.scss";
-import Loader from "react-loaders"
+import Loader from 'react-loaders';
 
 const Contact = () => {
     return (

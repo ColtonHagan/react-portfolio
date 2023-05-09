@@ -1,0 +1,14 @@
+.about-page {
+    display: flex;
+    align-items: center;
+    padding: 0rem 10rem;
+    height: 90vh;
+    .text-zone {
+        
+    }
+    .image-zone {
+        img {
+            transform: scale(0.8);
+        }
+    }
+}
