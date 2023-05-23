@@ -1,52 +1,26 @@
 .home-page {
-    display: flex;
-    align-items: center;
-    padding: 0rem 10rem;
-    height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0rem 10rem;
+  height: 90vh;
     
-    .text-zone {
-      padding: 7rem 0rem;
-      letter-spacing: 0.15rem;
-      width: 50%;
-      
-      h1 {
-        color: rgb(201, 190, 190);
-        font: 400 6rem 'Coolvetica';
-      }
-  
-      h2 {
-        margin-top: -1.5rem;
-        color: #8d8d8d;
-        font: 400 1.2rem sans-serif;
-        animation: fadeIn 1s 1.8s backwards;
-      }
-
-      .button {
-        margin-top: 5rem;
-      }
-  
-      .flat-button {
-        color: #ffd700;
-        font: 400 1.3rem sans-serif;
-        font-weight: bold;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 1.25rem 2.25rem;
-        border: 0.15rem solid #ffd700;
-        border-radius: 0.3rem;
-        white-space: nowrap;
-        animation: fadeIn 1s 1.8s backwards;
-        
-        &:hover {
-          background-color: #ffd700;
-          color: #333;
-        }
-      }
+  .text-zone {
+    padding: 7rem 0rem;
+    letter-spacing: 0.15rem;
+    width: 50%;
+    
+    h1 {
+      color: rgb(201, 190, 190);
+      font: 400 6rem 'Coolvetica';
     }
-    .image-zome {
-      width: 50%;
-      overflow-x: hidden;
-      margin: auto;
+
+    h2 {
+      margin-top: -1.5rem;
+      margin-bottom: 5rem;
+      color: #8d8d8d;
+      font: 400 1.2rem sans-serif;
+      animation: fadeIn 1s 1.8s backwards;
     }
   }
+}
   

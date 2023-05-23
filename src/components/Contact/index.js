@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <div className="container contact-page">
-                Hello
+                
             </div>
             <Loader type="triangle-skew-spin" />
         </>

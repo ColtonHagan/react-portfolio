@@ -4,7 +4,21 @@
     padding: 0rem 10rem;
     height: 90vh;
     .text-zone {
-        
+        animation: fadeIn 1s 1.8s backwards;
+        h1 {
+            color: white;
+            font: 600 4rem 'Coolvetica';
+        }
+
+        p {
+            margin-top: -1rem;
+            margin-bottom: 3.5rem;
+            color: #8d8d8d;
+            font: 2rem sans-serif;
+        }
+        .flat-button {
+            font-size: 2rem;
+        }
     }
     .image-zone {
         img {

@@ -14,7 +14,9 @@ const About = () => {
         <div className="text-zone">
           <h1>About Me</h1>
           <p>
-            I'm recent graduate of Western Washington University with a Computer Science BS Degree. I'm hardworking individual with communication skills who enjoys a high-pressure team environment. Looking to put my knowledge of computer science to work by designing, coding, testing, and debugging software.
+            I'm recent graduate of Western Washington University with a Computer Science BS Degree who is a <br/>
+            hardworking individual with communication skills and enjoys a high-pressure team environments. <br/>
+            Looking to put my knowledge of computer science to work by designing, coding, testing, and debugging software.
           </p>
           <a href={Resume} className="flat-button" download="resume">Resume</a>
         </div>
