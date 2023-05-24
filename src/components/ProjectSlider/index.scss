@@ -1,0 +1,13 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+.alice-carousel {
+    width: 80%;
+    margin: 0 auto;
+    
+    .alice-carousel__dots-item.__active{
+        background: #ffd700 !important;
+    }
+    
+    .alice-carousel__dots-item {
+        background: #C9BEBE !important;
+    }
+}
