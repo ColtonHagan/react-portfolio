@@ -3,28 +3,38 @@ import "./index.scss";
 import LogoSubtitle from "../../assets/images/bad-temp-subtitle-logo.png";
 import Logo from "../../assets/images/bad-temp-logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome, faArchive, faUser, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faHome, faArchive, faUser, faEnvelope, faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const Sidebar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="nav-bar">
+            <div className="mobile">
+                {
+                    menuOpen ? 
+                    <FontAwesomeIcon icon={faXmark} onClick={setMenuOpen(true)}/> :
+                    <FontAwesomeIcon icon={faBars}/>
+                }
+            </div>
             <Link className="logo" to='/'>
                 <img src={Logo} alt="Logo"/>
                 <img className="sub-logo" src={LogoSubtitle} alt="replace"/>
             </Link>
             <nav>
                 <NavLink exact="true" className="home-link" to="/">
-                    <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faHome}/>
                 </NavLink>
                 <NavLink exact="true" className="about-link" to="/about">
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faUser}/>
                 </NavLink>
                 <NavLink exact="true" className="projects-link" to="/projects">
-                    <FontAwesomeIcon icon={faArchive} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faArchive}/>
                 </NavLink>
                 <NavLink exact="true" className="contact-link" to="/contact">
-                    <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+                    <FontAwesomeIcon icon={faEnvelope}/>
                 </NavLink>
             </nav>
             <ul>

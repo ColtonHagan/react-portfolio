@@ -8,7 +8,7 @@ const ProjectItem = ({title, github, img}) => {
     <div className="project-item">
         <img src={img} alt={title} />
         <div className="img-info">
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <a href={github} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} className="github-icon"/>
             </a>
