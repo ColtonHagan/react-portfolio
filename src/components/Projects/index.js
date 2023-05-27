@@ -2,36 +2,40 @@ import React from 'react';
 import "./index.scss";
 import Loader from 'react-loaders';
 import ProjectSlider from '../ProjectSlider';
-import portfolio from  "../../assets/images/portfolio2.jpg";
+import portfolio from  "../../assets/images/portfolio.jpg";
+import deadwood from "../../assets/images/deadwood.jpg";
+import pagewise from "../../assets/images/PageWise.png";
+import bestreads from "../../assets/images/bestreads.png";
+import pokemon from "../../assets/images/pokemon.jpg"
 import AnimatedLetters from "../AnimatedLetters";
 
 
 const Projects = () => {
   const projectArray = [
     {
-      title: "1111111111111",
+      title: "This portfolio website",
       github: "https://github.com/ColtonHagan/react-portfolio",
       img: portfolio,
     },
     {
-      title: "2222222222222",
-      github: "https://github.com/ColtonHagan/react-portfolio",
-      img: portfolio,
+      title: "Deadwood board game",
+      github: "https://github.com/ColtonHagan/Deadwood/tree/gui",
+      img: deadwood,
     },
     {
-      title: "333333333333333333333",
-      github: "https://github.com/ColtonHagan/react-portfolio",
-      img: portfolio,
+      title: "PageWise an android reading tracker",
+      github: "https://github.com/kurtzhk/pagewise/tree/codeCleanUp",
+      img: pagewise,
     },
     {
-      title: "444444444444444444444444444",
-      github: "https://github.com/ColtonHagan/react-portfolio",
-      img: portfolio,
+      title: "BestReads a book review website",
+      github: "https://github.com/ColtonHagan/PortfolioFor330/tree/master/Book%20Reviews",
+      img: bestreads,
     },
     {
-      title: "5555555",
-      github: "https://github.com/ColtonHagan/react-portfolio",
-      img: portfolio,
+      title: "Basic Pokemon game",
+      github: "https://github.com/ColtonHagan/PortfolioFor330/tree/master/Pokemon%20Game",
+      img: pokemon,
     },
   ];
   return (

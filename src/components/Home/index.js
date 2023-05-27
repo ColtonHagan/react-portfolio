@@ -29,7 +29,7 @@ const Home = () => {
                         <AnimatedLetters letterClass={letters} strArray={jobArray} idx={23}/>
                     </h1>
                     <h2>Full Cycle Software Developer & Web Designer</h2>
-                    <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                    <Link to="/contact" className="flat-button">Contact Me</Link>
                 </div>
                 <div className="image-zone">
                     <img src={Image} alt="guy on computer"/>

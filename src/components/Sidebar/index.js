@@ -1,29 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
-import LogoSubtitle from "../../assets/images/bad-temp-subtitle-logo.png";
-import Logo from "../../assets/images/bad-temp-logo.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHome, faArchive, faUser, faEnvelope, faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faHome, faArchive, faUser, faEnvelope, faBars, faClose} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin, faDiscord} from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
 const Sidebar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [menu, setMenu] = useState(false)
 
     return (
         <div className="nav-bar">
-            <div className="mobile">
-                {
-                    menuOpen ? 
-                    <FontAwesomeIcon icon={faXmark} onClick={setMenuOpen(true)}/> :
-                    <FontAwesomeIcon icon={faBars}/>
-                }
-            </div>
             <Link className="logo" to='/'>
-                <img src={Logo} alt="Logo"/>
-                <img className="sub-logo" src={LogoSubtitle} alt="replace"/>
+                COLTON
             </Link>
-            <nav>
+            <nav className={menu ? "mobile" : ""}>
                 <NavLink exact="true" className="home-link" to="/">
                     <FontAwesomeIcon icon={faHome}/>
                 </NavLink>
@@ -40,15 +30,21 @@ const Sidebar = () => {
             <ul>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/colton-hagan-002b891b6/">
-                        <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e"/>
+                        <FontAwesomeIcon icon={faLinkedin}/>
                     </a>
                 </li>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://github.com/ColtonHagan">
-                        <FontAwesomeIcon icon={faGithub} color="#4d4d4e"/>
+                        <FontAwesomeIcon icon={faGithub}/>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noreferrer" href="https://discord.com/users/ColtonHagan#7205">
+                        <FontAwesomeIcon icon={faDiscord}/>
                     </a>
                 </li>
             </ul>
+            <FontAwesomeIcon onClick={() => setMenu(!menu)} icon={menu ? faClose: faBars} className="mobile-menu"/>
         </div>
     );
 }

@@ -5,23 +5,20 @@
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 31.25rem;
 
     .logo {
-        display: block;
-        padding: 0.5rem 0;
+        margin-top: 1rem;
+        font: 900 2rem La Belle Aurore;
+        font-weight: 900;
 
-        img {
-            display: block;
-            margin: 0.5rem auto;
-            width: 1.5rem;
-            height: auto;
-
-            &.sub-logo {
-                width: 3.125rem;
-            }
-        }
+        letter-spacing: -.125rem;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        background: -webkit-linear-gradient(white, #ffd700);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+
     nav {
         display: block;
         text-align: center;
@@ -32,7 +29,7 @@
         width: 100%;
 
         a {
-            font-size: 1.375rem;
+            font-size: 1.4rem;
             color: #4d4d4e;
             display: block;
             line-height: 3.1875rem;
@@ -55,9 +52,10 @@
                     opacity: 1;
                 }
             }
+
             &:after {
                 content: "";
-                font-size: 0.5625rem;
+                font-size: 0.57rem;
                 letter-spacing: 0.125rem;
                 position: absolute;
                 bottom: 0;
@@ -68,32 +66,38 @@
                 transition: all 0.3s ease-out;
             }
         }
+
         a.home-link {
             &:after {
                 content: 'HOME';
             }
         }
+
         a.about-link {
             &:after {
                 content: 'ABOUT';
             }
         }
+
         a.projects-link {
             &:after {
                 content: 'PROJECTS';
             }
         }
+
         a.contact-link {
             &:after {
                 content: 'CONTACT';
             }
         }
+
         a.active {
             svg {
                 color: #ffd700;
             }
         }
     }
+
     ul {
         position: absolute;
         bottom: 1.25rem;
@@ -103,17 +107,79 @@
         list-style: none;
         text-align: center;
         margin: 0;
+
+        li a {
+            color: #4d4d4e;
+        }
     }
+
     li {
         a {
-            padding: 0.4375rem 0;
+            padding: 0.45rem 0;
             display: block;
-            font-size: 0.9375rem;
+            font-size: 1rem;
             line-height: 1rem;
 
             &:hover svg {
                 color: #ffd700;
             }
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        background: transparent;
+        position: initial;
+
+        ul, nav, .logo {
+            display: none;
+        }
+
+        nav {
+            width: 100%;
+            height: auto;
+            background: #181818;
+            z-index: 2;
+
+            &.mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:after {
+                opacity: 1;
+                position: initial;
+                width: auto;
+                margin-left: .8rem;
+            }
+
+            a svg {
+                opacity: 1 !important;
+            }
+        }
+
+        .mobile-menu {
+            color: #ffd700;
+            font-size: 3rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: block;
+            z-index: 4;
         }
     }
 }

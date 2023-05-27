@@ -48,16 +48,23 @@ input, textarea {
 
 .flat-button {
   color: $primary-color;
-  font: 400 1.3rem sans-serif;
+  font: 400 1.8rem sans-serif;
   text-decoration: none;
   padding: 1.25rem 2.25rem;
   border: 0.15rem solid $primary-color;
   border-radius: 0.3rem;
   white-space: nowrap;
   animation: fadeIn 1s 1.8s backwards;
+  background-color: #022c43;
 
   &:hover {
     background-color: $primary-color;
     color: #333;
+  }
+
+  @media screen and (max-width: 1200px) {
+    body {
+      overflow: visible;
+    }
   }
 }
