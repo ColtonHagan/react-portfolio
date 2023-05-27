@@ -25,7 +25,7 @@
         h2 {
             font: 400 2.5rem 'Coolvetica';
             color: v.$text-secondary-color;
-            letter-spacing: 0px;
+            letter-spacing: 0;
         }
 
         .form-wrapper h2 {
@@ -43,7 +43,7 @@
 
         ul {
             list-style: none;
-            padding: 0px;
+            padding: 0;
         }
 
         p, ul, .form {
