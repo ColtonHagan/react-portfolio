@@ -10,6 +10,7 @@ const Sidebar = () => {
 
     return (
         <div className="nav-bar">
+            <FontAwesomeIcon onClick={() => setMenu(!menu)} icon={menu ? faClose: faBars} className="mobile-menu"/>
             <Link className="logo" to='/'>
                 COLTON
             </Link>
@@ -44,7 +45,6 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
-            <FontAwesomeIcon onClick={() => setMenu(!menu)} icon={menu ? faClose: faBars} className="mobile-menu"/>
         </div>
     );
 }

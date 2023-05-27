@@ -1,13 +1,14 @@
 .nav-bar {
     background-color: #181818;
-    width: 3.75rem;
-    height: 100%;
-    position: absolute;
-    top: 0;
     z-index: 3;
+    height: 100vh;
+    padding-top: -10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .logo {
-        margin-top: 1rem;
+        padding-top: 1rem;
         font: 900 2rem La Belle Aurore;
         font-weight: 900;
 
@@ -15,27 +16,24 @@
         writing-mode: vertical-rl;
         text-orientation: mixed;
         background: -webkit-linear-gradient(white, #ffd700);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
     nav {
-        display: block;
         text-align: center;
-        position: absolute;
-        height: 13.125rem;
-        top: 50%;
-        margin-top: -7.5rem;
-        width: 100%;
 
         a {
             font-size: 1.4rem;
             color: #4d4d4e;
-            display: block;
             line-height: 3.1875rem;
             height: 3.1875rem;
             position: relative;
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
 
             i {
                 transition: all 0.3s ease-out;
@@ -57,13 +55,12 @@
                 content: "";
                 font-size: 0.57rem;
                 letter-spacing: 0.125rem;
-                position: absolute;
-                bottom: 0;
-                display: block;
-                width: 100%;
-                text-align: center;
+                position: relative;
+                margin-top: -50%; 
                 opacity: 0;
                 transition: all 0.3s ease-out;
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -99,26 +96,19 @@
     }
 
     ul {
-        position: absolute;
-        bottom: 1.25rem;
         width: 100%;
-        display: block;
         padding: 0;
+        margin: 0;
         list-style: none;
         text-align: center;
-        margin: 0;
+        padding-bottom: 1rem;
 
         li a {
             color: #4d4d4e;
-        }
-    }
-
-    li {
-        a {
-            padding: 0.45rem 0;
-            display: block;
+            padding: .5rem 0;
             font-size: 1rem;
-            line-height: 1rem;
+            display: flex;
+            justify-content: center;
 
             &:hover svg {
                 color: #ffd700;
@@ -134,36 +124,37 @@
 @media screen and (max-width: 1200px) {
     .nav-bar {
         background: transparent;
-        position: initial;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
 
         ul, nav, .logo {
             display: none;
         }
 
         nav {
-            width: 100%;
-            height: auto;
+            width: 100vw;
             background: #181818;
             z-index: 2;
+            position: absolute;
 
             &.mobile {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 0px;
-                padding-top: 0px;
             }
 
             a {
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
             }
 
             a:after {
                 opacity: 1;
-                position: initial;
-                width: auto;
+                position: relative;
+                margin: 0;
                 margin-left: .8rem;
             }
 
@@ -175,9 +166,8 @@
         .mobile-menu {
             color: #ffd700;
             font-size: 3rem;
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
             display: block;
             z-index: 4;
         }
