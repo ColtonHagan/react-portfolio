@@ -1,3 +1,5 @@
+@use "../../util/variables" as v;
+
 .contact-form {
     ul {
         .single-line {
@@ -17,13 +19,13 @@
 
             input[type="text"], input[type="email"], textarea {
                 width: 100%;
-                background-color: #115173;
+                background-color: v.$background-secondary-color;
                 border: none;
                 height: 3rem;
                 font-size: 2rem;
                 padding: 0 1rem;
                 box-sizing: border-box;
-                color: white;
+                color: v.$text-color;
                 border-radius: .5rem;
             }
             textarea {

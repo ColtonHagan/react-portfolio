@@ -1,5 +1,4 @@
-$primary-color: #ffd700;
-
+@use "./util/variables" as v;
 @import "animate.css";
 @import "~loaders.css/src/animations/triangle-skew-spin.scss";
 
@@ -26,7 +25,7 @@ body {
   margin: 0;
   font: 300 .75rem "Helvetica Neue", "sans-serif";
   color: #444;
-  background-color: #022c43;
+  background-color: v.$background-color;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
@@ -47,18 +46,18 @@ input, textarea {
 }
 
 .flat-button {
-  color: $primary-color;
+  color: v.$primary-color;
   font: 400 1.8rem sans-serif;
   text-decoration: none;
   padding: 1.25rem 2.25rem;
-  border: 0.15rem solid $primary-color;
+  border: 0.15rem solid v.$primary-color;
   border-radius: 0.3rem;
   white-space: nowrap;
   animation: fadeIn 1s 1.8s backwards;
-  background-color: #022c43;
+  background-color: v.$background-color;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: v.$primary-color;
     color: #333;
   }
 

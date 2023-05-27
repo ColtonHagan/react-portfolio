@@ -1,3 +1,5 @@
+@use "../../util/variables" as v;
+
 .contact-page {
     display: flex;
     align-items: center;
@@ -5,7 +7,7 @@
     flex-direction: column;
 
     h1 {
-        color: white;
+        color: v.$text-color;
         font: 600 4rem 'Coolvetica';
     }
 
@@ -22,7 +24,7 @@
 
         h2 {
             font: 400 2.5rem 'Coolvetica';
-            color: #dddddd;
+            color: v.$text-secondary-color;
             letter-spacing: 0px;
         }
 
@@ -35,7 +37,7 @@
         }
 
         p {
-            color: #8d8d8d;
+            color: v.$secondary-colory;
             font-size: 1.5rem;
         }
 
@@ -54,14 +56,14 @@
             flex-direction: row;    
             justify-content: space-around;
             li a {
-                border: .125rem solid #ffd700;
+                border: .125rem solid v.$primary-color;
                 padding: 1.75rem;
                 border-radius: 100%;
                 font-size: 2rem;
-                color: #ffd700;
+                color: v.$primary-color;
 
                 &:hover {
-                    background-color: #ffd700;
+                    background-color: v.$primary-color;
                     color: #333;
                 }
             }

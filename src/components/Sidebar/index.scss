@@ -1,3 +1,5 @@
+@use "../../util/variables" as v;
+
 .nav-bar {
     background-color: #181818;
     z-index: 3;
@@ -15,7 +17,7 @@
         letter-spacing: -.125rem;
         writing-mode: vertical-rl;
         text-orientation: mixed;
-        background: -webkit-linear-gradient(white, #ffd700);
+        background: -webkit-linear-gradient(v.$text-color, v.$primary-color);
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -40,7 +42,7 @@
             }
 
             &:hover {
-                color: #ffd700;
+                color: v.$primary-color;
 
                 svg {
                     opacity: 0;
@@ -90,7 +92,7 @@
 
         a.active {
             svg {
-                color: #ffd700;
+                color: v.$primary-color;
             }
         }
     }
@@ -111,7 +113,7 @@
             justify-content: center;
 
             &:hover svg {
-                color: #ffd700;
+                color: v.$primary-color;
             }
         }
     }
@@ -164,7 +166,7 @@
         }
 
         .mobile-menu {
-            color: #ffd700;
+            color: v.$primary-color;
             font-size: 3rem;
             margin-top: 1rem;
             margin-left: 1rem;

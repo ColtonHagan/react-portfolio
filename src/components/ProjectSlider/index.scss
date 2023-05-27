@@ -1,3 +1,5 @@
+@use "../../util/variables" as v;
+
 .slider {
     min-height: 0;
     min-width: 0;
@@ -9,17 +11,17 @@
                 font-size: 1.25rem;
                 line-height: 1.25rem;
                 opacity: 1;
-                color: white;
+                color: v.$text-color;
             }
             &:hover::before {
-                color: white;
+                color: v.$text-color;
             }
         }
         li.slick-active {
             button {
                 &::before {
                     opacity: 1;
-                    color: #ffd700;
+                    color: v.$primary-color;
                 }
             }
         }

@@ -1,7 +1,9 @@
+@use "../../util/variables" as v;
+
 .project-item {
     margin: 0.5rem;
     border-radius: 0.5rem;
-    border: 0.25rem solid #ffd700;
+    border: 0.25rem solid v.$primary-color;
     max-width: 100%;
     max-height: 29.632469vh;
 
@@ -14,9 +16,9 @@
         display: flex;
         align-items: center;
         padding: 0.2rem;
-        border-top: 0.25rem solid #ffd700;
+        border-top: 0.25rem solid v.$primary-color;
         h2 {
-            color: white;
+            color: v.$text-color;
             font-size: 1.5rem;
             margin-right: 0.75rem;
             text-align: center;
@@ -27,7 +29,7 @@
             padding: 0 0.5rem;
 
             .github-icon {
-                color: white;
+                color: v.$text-color;
                 font-weight: 500;
                 font-size: 2rem;
             }
