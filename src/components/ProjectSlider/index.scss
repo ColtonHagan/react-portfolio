@@ -2,7 +2,8 @@
     min-height: 0;
     min-width: 0;
     .slick-dots {
-        bottom: -50px;
+        position: relative;
+        margin-top: 1vh;
         li button {
             &::before {
                 font-size: 1.25rem;

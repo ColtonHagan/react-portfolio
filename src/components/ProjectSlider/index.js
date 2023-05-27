@@ -13,7 +13,7 @@ const ProjectSlider = ({ projects }) => {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1000,
     responsive: [
       {

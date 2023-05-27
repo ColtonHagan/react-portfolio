@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 const ProjectItem = ({title, github, img}) => {
+
   return (
     <div className="project-item">
         <img src={img} alt={title} />

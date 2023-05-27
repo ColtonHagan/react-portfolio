@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% auto;
+    justify-content: center; 
 
     .slider-wrapper {
-        height: 80%;
-        width:  66%;
+        height: auto;
+        width:  66vw;
         animation: fadeInRightBig 1s 1.8s backwards;
     }
     

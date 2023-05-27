@@ -38,6 +38,8 @@ const Projects = () => {
       img: pokemon,
     },
   ];
+  var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientWidth;
+console.log("Viewport Width (in pixels):", viewportHeight);
   return (
     <>
         <div className="container projects-page">

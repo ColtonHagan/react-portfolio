@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
 
     h1 {
         color: white;
@@ -13,10 +13,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        width: 100%;
         text-align: left;
 
         .contact-information, .form-wrapper {
-            width: 30%;
+            width: 33vw;
         }
 
         h2 {
