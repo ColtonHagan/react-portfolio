@@ -26,9 +26,7 @@ const Contact = () => {
                     <div className='contact-information'>
                         <h2>Contact Information</h2>
                         <p>
-                            Currently located in Leavenworth, WA, but willing to relocate anywhere in the
-                            United States. Reach out if you are interested in hiring or want more information.
-                            Always available by email and available by phone weekdays past noon PST.
+                        Currently located in Leavenworth, WA, but willing to relocate anywhere in the United States. Reach out if you are interested in hiring or want more information. Always available by email and available by phone on weekdays past noon PST.
                         </p>
                         <ul>
                             <li>
