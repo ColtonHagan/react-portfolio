@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faArchive, faUser, faEnvelope, faBars, faClose} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faDiscord} from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
-import logo from "../../../assets/images/wiplogosmall.png";
+import logo from "../../../assets/images/logo.png";
 
 const Sidebar = () => {
     const [menu, setMenu] = useState(false)
