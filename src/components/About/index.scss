@@ -5,11 +5,13 @@
     align-items: center;
     padding: 0rem 10rem;
     height: 90vh;
+
     .text-zone {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 50vw;
+
         h1 {
             color: v.$text-color;
             font: 600 4rem 'Coolvetica';
@@ -22,10 +24,12 @@
             color: v.$secondary-colory;
             font-size: 2rem;
         }
+
         .flat-button {
             font-size: 2rem;
         }
     }
+
     .image-zone {
         display: flex;
         justify-content: center;
@@ -40,68 +44,97 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        margin-left: -90vw;
+
         .text-zone {
             align-items: center;
             width: 100%;
         }
+
         .image-zone {
             width: 100%;
         }
     }
-    
+
 }
-@media screen and (max-width: 600px) {
+
+//deal with landscaping mode
+@media screen and (max-height: 800px) and (orientation: landscape) {
     .about-page {
-      width: 90vw;
-      .text-zone {
-        margin-top: -12rem;
-      }
-      .image-zone {
-        transform: scale(.6);
-      }
+        margin-top: 24vh;
     }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-height: 520px) and (orientation: landscape) {
     .about-page {
-      width: 90vw;
-      .text-zone {
-        margin-top: -12rem;
-      }
-      .image-zone {
-        transform: scale(.6);
-      }
+        margin-top: 36vh;
     }
 }
+
+@media screen and (max-height: 440px) and (orientation: landscape) {
+    .about-page {
+        margin-top: 50vh;
+    }
+}
+
+@media screen and (max-height: 380px) and (orientation: landscape) {
+    .about-page {
+        margin-top: 60vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-page {
+        width: 90vw;
+
+        .text-zone {
+            margin-top: -12rem;
+        }
+
+        .image-zone {
+            transform: scale(.6);
+        }
+    }
+}
+
 @media screen and (max-width: 450px) {
     .about-page {
-      width: 86vw;
-      .text-zone {
-        margin-top: -15rem;
-      }
-      .image-zone {
-        transform: scale(.5);
-      }
+        width: 86vw;
+
+        .text-zone {
+            margin-top: -15rem;
+        }
+
+        .image-zone {
+            transform: scale(.5);
+        }
     }
 }
+
 @media screen and (max-width: 400px) {
     .about-page {
-      width: 86vw;
-      .text-zone {
-        margin-top: -18rem;
-      }
-      .image-zone {
-        transform: scale(.4);
-      }
+        width: 86vw;
+
+        .text-zone {
+            margin-top: -18rem;
+        }
+
+        .image-zone {
+            transform: scale(.4);
+        }
     }
 }
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 350px) {
     .about-page {
-      width: 82vw;
-      .text-zone {
-        margin-top: -18rem;
-      }
-      .image-zone {
-        transform: scale(.35);
-      }
+        width: 82vw;
+
+        .text-zone {
+            margin-top: -18rem;
+        }
+
+        .image-zone {
+            transform: scale(.35);
+        }
     }
 }
