@@ -6,6 +6,9 @@
     padding: 0rem 10rem;
     height: 90vh;
     .text-zone {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 50vw;
         h1 {
             color: v.$text-color;
@@ -24,8 +27,81 @@
         }
     }
     .image-zone {
-        img {
-            transform: scale(0.8);
+        display: flex;
+        justify-content: center;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-page {
+        width: 92.5vw;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .text-zone {
+            align-items: center;
+            width: 100%;
         }
+        .image-zone {
+            width: 100%;
+        }
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .about-page {
+      width: 90vw;
+      .text-zone {
+        margin-top: -12rem;
+      }
+      .image-zone {
+        transform: scale(.6);
+      }
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-page {
+      width: 90vw;
+      .text-zone {
+        margin-top: -12rem;
+      }
+      .image-zone {
+        transform: scale(.6);
+      }
+    }
+}
+@media screen and (max-width: 450px) {
+    .about-page {
+      width: 86vw;
+      .text-zone {
+        margin-top: -15rem;
+      }
+      .image-zone {
+        transform: scale(.5);
+      }
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-page {
+      width: 86vw;
+      .text-zone {
+        margin-top: -18rem;
+      }
+      .image-zone {
+        transform: scale(.4);
+      }
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-page {
+      width: 82vw;
+      .text-zone {
+        margin-top: -18rem;
+      }
+      .image-zone {
+        transform: scale(.35);
+      }
     }
 }

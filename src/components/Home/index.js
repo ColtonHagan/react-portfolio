@@ -3,7 +3,7 @@ import "./index.scss";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
-import Image from "../../assets/images/home-page-image.png"
+import Image from "../../assets/images/home-page-image-skinny.png"
 
 const Home = () => {
     const [letters, setLetters] = useState("letter-animate");

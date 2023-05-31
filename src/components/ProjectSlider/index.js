@@ -13,8 +13,8 @@ const ProjectSlider = ({ projects }) => {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1250,
     responsive: [
       {
         breakpoint: 1024,
@@ -23,12 +23,12 @@ const ProjectSlider = ({ projects }) => {
         },
       },
       {
-        breakpoint: 568,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
         },
       },
-    ],
+    ]
   };
 
   return (

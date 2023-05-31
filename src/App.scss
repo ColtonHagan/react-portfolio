@@ -23,7 +23,7 @@ html {
 
 body {
   margin: 0;
-  font: 300 .75rem "Helvetica Neue", "sans-serif";
+  font: 300 1rem "Helvetica Neue", "sans-serif";
   color: #444;
   background-color: v.$background-color;
   overflow: hidden;
@@ -60,10 +60,10 @@ input, textarea {
     background-color: v.$primary-color;
     color: #333;
   }
-
-  @media screen and (max-width: 1200px) {
-    body {
-      overflow: visible;
-    }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-y: visible;
+    overflow-wrap: break-word;
   }
 }

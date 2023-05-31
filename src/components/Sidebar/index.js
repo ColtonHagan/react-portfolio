@@ -14,7 +14,7 @@ const Sidebar = () => {
             <Link className="logo" to='/'>
                 COLTON
             </Link>
-            <nav className={menu ? "mobile" : ""}>
+            <nav className={menu ? "mobile" : ""} onClick={() => setMenu(false)}>
                 <NavLink exact="true" className="home-link" to="/">
                     <FontAwesomeIcon icon={faHome}/>
                 </NavLink>

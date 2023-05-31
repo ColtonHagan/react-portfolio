@@ -5,11 +5,10 @@
     border-radius: 0.5rem;
     border: 0.25rem solid v.$primary-color;
     max-width: 100%;
-    max-height: 29.632469vh;
 
     img {
-        border-radius: 0.5rem 0.5rem 0 0;
         max-height: 22rem;
+        width: 100%;
     }
 
     .img-info {
@@ -34,6 +33,16 @@
                 font-size: 2rem;
             }
         }
+    }
+}
+@media screen and (max-width: 800px) {
+    .project-item .img-info h2 {
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 370px) {
+    .project-item .img-info h2 {
+        font-size: 1rem;
     }
 }
   
