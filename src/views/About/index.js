@@ -3,7 +3,7 @@ import "./index.scss";
 import Loader from 'react-loaders';
 import Image from "../../assets/images/about-page-image.png";
 import Resume from "../../assets/pdf/resume.pdf";
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 
 const About = () => {
   return (

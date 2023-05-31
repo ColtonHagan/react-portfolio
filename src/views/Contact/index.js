@@ -1,9 +1,9 @@
 import React from 'react'
 import "./index.scss";
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
-import ContactForm from '../ContactForm';
-import ContactItem from '../ContactItem';
+import AnimatedLetters from '../../components/AnimatedLetters';
+import ContactForm from './components/ContactForm';
+import ContactItem from './components/ContactItem';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faEnvelope, faPhone, faLocationPin, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";

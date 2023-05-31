@@ -22,6 +22,6 @@
 
 @for $i from 0 through 39 {
   .letter-animate._#{$i} {
-    animation-delay: #{$i / 17}s;
+    animation-delay: calc($i / 17)s;
   }
 }

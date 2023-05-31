@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHome, faArchive, faUser, faEnvelope, faBars, faClose} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faDiscord} from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import logo from "../../../assets/images/wiplogosmall.png";
 
 const Sidebar = () => {
     const [menu, setMenu] = useState(false)
@@ -12,7 +13,7 @@ const Sidebar = () => {
         <div className="nav-bar">
             <FontAwesomeIcon onClick={() => setMenu(!menu)} icon={menu ? faClose: faBars} className="mobile-menu"/>
             <Link className="logo" to='/'>
-                COLTON
+                <img src={logo} alt="logo"/>
             </Link>
             <nav className={menu ? "mobile" : ""} onClick={() => setMenu(false)}>
                 <NavLink exact="true" className="home-link" to="/">

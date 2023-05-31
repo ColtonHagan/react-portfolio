@@ -1,13 +1,13 @@
 import React from 'react';
 import "./index.scss";
 import Loader from 'react-loaders';
-import ProjectSlider from '../ProjectSlider';
+import ProjectSlider from './components/ProjectSlider';
 import portfolio from  "../../assets/images/portfolio.jpg";
 import deadwood from "../../assets/images/deadwood.jpg";
 import pagewise from "../../assets/images/PageWise.png";
 import bestreads from "../../assets/images/bestreads.png";
 import pokemon from "../../assets/images/pokemon.jpg"
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 
 
 const Projects = () => {
@@ -38,8 +38,6 @@ const Projects = () => {
       img: pokemon,
     },
   ];
-  var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientWidth;
-console.log("Viewport Width (in pixels):", viewportHeight);
   return (
     <>
         <div className="container projects-page">

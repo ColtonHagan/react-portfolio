@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import "./index.scss"; 
 import { useEffect, useState } from "react";
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters";
 import Loader from "react-loaders";
-import Image from "../../assets/images/home-page-image-skinny.png"
+import Image from "../../assets/images/home-page-image.png"
 
 const Home = () => {
     const [letters, setLetters] = useState("letter-animate");
