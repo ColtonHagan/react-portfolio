@@ -26,13 +26,13 @@
   }
 }
 
+// Media queries...
+
 @media screen and (max-width: 1200px) {
   .home-page {
     padding: 0 0rem;
 
     .text-zone {
-      transform: none;
-
       h1 {
         font-size: 5rem;
         white-space: nowrap;

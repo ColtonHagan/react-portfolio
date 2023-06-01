@@ -1,12 +1,18 @@
-import React from 'react'
+/**
+ * Contact.js
+ * 
+ * Description: This file contains the Contact page, with contact form and contact information.
+ * Author: Colton Hagan
+ * Created: 5/31/2023
+ */
+
+import React from 'react';
 import "./index.scss";
 import Loader from 'react-loaders';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import ContactForm from './components/ContactForm';
-import ContactItem from './components/ContactItem';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faEnvelope, faPhone, faLocationPin, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import ContactInformation from './components/ContactInformation';
+
 const Contact = () => {
     return (
         <>
@@ -18,50 +24,13 @@ const Contact = () => {
                         idx={20}
                     />
                 </h1>
-                <div className='contact-wrapper'>
-                    <div className='form-wrapper'>
+                <div id='contact-wrapper'>
+                    <div id='form-wrapper'>
                         <h2>Message Me</h2>
                         <ContactForm className="form" />
                     </div>
-                    <div className='contact-information'>
-                        <h2>Contact Information</h2>
-                        <p>
-                        Currently located in Leavenworth, WA, but willing to relocate anywhere in the United States. Reach out if you are interested in hiring or want more information. Always available by email and available by phone on weekdays past noon PST.
-                        </p>
-                        <ul>
-                            <li>
-                                <ContactItem logo={faLocationPin} title="Current Location" text="Leavenworth, WA" />
-                            </li>
-                            <li>
-                                <ContactItem logo={faGlobe} title="Available Locations" text="United States" />
-                            </li>
-                            <li>
-                                <ContactItem logo={faComment} title="Languages" text="English" />
-                            </li>
-                            <li>
-                                <ContactItem logo={faEnvelope} title="Email" text="coltonmhagan@gmail.com" />
-                            </li>
-                            <li>
-                                <ContactItem logo={faPhone} title="Phone" text="(509) 741-7428" />
-                            </li>
-                        </ul>
-                        <ul className='logos'>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/colton-hagan-002b891b6/">
-                                    <FontAwesomeIcon icon={faLinkedin} />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/ColtonHagan">
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="https://discord.com/users/ColtonHagan#7205">
-                                    <FontAwesomeIcon icon={faDiscord} />
-                                </a>
-                            </li>
-                        </ul>
+                    <div id='contact-information'>
+                        <ContactInformation />
                     </div>
                 </div>
             </div>

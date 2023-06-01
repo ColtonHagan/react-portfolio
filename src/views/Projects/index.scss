@@ -4,37 +4,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 
-    .slider-wrapper {
+    #slider-wrapper {
         height: auto;
-        width:  66vw;
+        width: 66vw;
         animation: fadeIn 1s 1.8s backwards;
     }
-    
+
     h1 {
         color: v.$text-color;
         font: 600 4rem 'Coolvetica';
     }
 }
+
 @media screen and (max-width: 1900px) {
-    .projects-page .slider-wrapper {
-      width: 70vw;
+    .projects-page #slider-wrapper {
+        width: 70vw;
     }
 }
+
 @media screen and (max-width: 1400px) {
-    .projects-page .slider-wrapper {
-      width: 80vw;
-      margin-left: -10rem;
+    .projects-page #slider-wrapper {
+        width: 80vw;
+        margin-left: -10rem;
     }
 }
+
 @media screen and (max-width: 1200px) {
     .projects-page {
         width: 92.5vw;
         height: 90vh;
         padding: 0;
         margin-left: -90vw;
-        .slider-wrapper {
+
+        #slider-wrapper {
             margin: 0 auto;
         }
     }

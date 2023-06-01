@@ -1,19 +1,43 @@
+/**
+ * ContactForm.js
+ * 
+ * Description: ContactForm that sends email to me when information is entered.
+ * Author: Colton Hagan
+ * Created: 5/31/2023
+ */
 import React from 'react'
 import "./index.scss";
 import emailjs from "@emailjs/browser"
 import { useRef } from 'react';
+import Swal from 'sweetalert2';
 
 const ContactForm = () => {
     const form = useRef();
     const emailForm = (e) => {
-        console.log("submit clicked");
         e.preventDefault();
         emailjs.sendForm('service_qxqeu18', 'template_92etw9j', form.current, 'YLW3S_1QtgxX0QNZg')
             .then((result) => {
-                alert("Email sent :)");
-                window.location.reload(false);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Email sent.',
+                    showConfirmButton: false,
+                    customClass: {
+                        popup: 'alert-popup',
+                        icon: 'alert-icon'
+                    },
+                    timer: 1500
+                })
+                form.current.reset();
             }, (error) => {
-                alert("Error sending email, please try again :(");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error, please try again.',
+                    showConfirmButton: false,
+                    customClass: {
+                        popup: 'alert-popup'
+                    },
+                    timer: 3000
+                })
                 console.log(error.text);
             });
     }
@@ -21,19 +45,19 @@ const ContactForm = () => {
         <div className="contact-form">
             <form ref={form} onSubmit={emailForm}>
                 <ul>
-                    <div className='single-line'>
+                    <div id='single-line'>
                         <li>
-                            <input type='text' name='name' placeholder='Name' required/>
+                            <input type='text' name='name' placeholder='Name' required />
                         </li>
                         <li className="right" >
-                            <input type='email' name='email' placeholder='Email' required/>
+                            <input type='email' name='email' placeholder='Email' required />
                         </li>
                     </div>
                     <li>
-                        <input type='text' name='subject' placeholder='Subject' required/>
+                        <input type='text' name='subject' placeholder='Subject' required />
                     </li>
                     <li>
-                        <textarea classNamename='message' placeholder='Message' required/>
+                        <textarea name='message' placeholder='Message' required />
                     </li>
                     <li>
                         <input type="submit" className="flat-button" value="Send email" />
@@ -44,4 +68,4 @@ const ContactForm = () => {
     )
 }
 
-export default ContactForm
+export default ContactForm;

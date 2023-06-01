@@ -1,3 +1,11 @@
+/**
+ * ProjectSlider.js
+ * 
+ * Description: Project slider and settings.
+ * Author: Colton Hagan
+ * Created: 5/31/2023
+ */
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -44,4 +52,5 @@ const ProjectSlider = ({ projects }) => {
     </Slider>
   );
 };
+
 export default ProjectSlider;

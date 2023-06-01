@@ -1,14 +1,21 @@
+/**
+ * Projects.js
+ * 
+ * Description: Projects page with slider going over varous projects I have completed.
+ * Author: Colton Hagan
+ * Created: 5/31/2023
+ */
+
 import React from 'react';
 import "./index.scss";
 import Loader from 'react-loaders';
 import ProjectSlider from './components/ProjectSlider';
-import portfolio from  "../../assets/images/portfolio.jpg";
+import portfolio from "../../assets/images/portfolio.jpg";
 import deadwood from "../../assets/images/deadwood.jpg";
 import pagewise from "../../assets/images/PageWise.png";
 import bestreads from "../../assets/images/bestreads.png";
 import pokemon from "../../assets/images/pokemon.jpg"
 import AnimatedLetters from "../../components/AnimatedLetters";
-
 
 const Projects = () => {
   const projectArray = [
@@ -38,23 +45,24 @@ const Projects = () => {
       img: pokemon,
     },
   ];
+
   return (
     <>
-        <div className="container projects-page">
-          <h1>
-            <AnimatedLetters
-                letterClass={'letter-animate'}
-                strArray={["P", "r", "o", "j", "e", "c", "t", "s"]}
-                idx={20}
-            />
-          </h1>
-          <div className="slider-wrapper">
-            <ProjectSlider projects={projectArray} />
-          </div>
+      <div className="container projects-page">
+        <h1>
+          <AnimatedLetters
+            letterClass={'letter-animate'}
+            strArray={["P", "r", "o", "j", "e", "c", "t", "s"]}
+            idx={20}
+          />
+        </h1>
+        <div id="slider-wrapper">
+          <ProjectSlider projects={projectArray} />
         </div>
-        <Loader type="triangle-skew-spin" />
+      </div>
+      <Loader type="triangle-skew-spin" />
     </>
-  )
-}
+  );
+};
 
 export default Projects;

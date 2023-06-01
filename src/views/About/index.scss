@@ -37,6 +37,7 @@
     }
 }
 
+// Media queries...
 @media screen and (max-width: 1200px) {
     .about-page {
         width: 92.5vw;
@@ -58,7 +59,7 @@
 
 }
 
-//deal with landscaping mode
+// Landscaping mode
 @media screen and (max-height: 800px) and (orientation: landscape) {
     .about-page {
         margin-top: 24vh;

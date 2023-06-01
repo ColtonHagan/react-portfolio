@@ -1,0 +1,37 @@
+@use "../../../../util/variables" as v;
+
+.contact-info {
+    h2 {
+        animation: fadeInUp 1s 1.5s backwards;
+    }
+
+    p {
+        color: v.$secondary-color;
+        font-size: 1.5rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .logos {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        li a {
+            border: .125rem solid v.$primary-color;
+            padding: 1.75rem;
+            border-radius: 100%;
+            font-size: 2rem;
+            color: v.$primary-color;
+
+            &:hover {
+                background-color: v.$primary-color;
+                color: #333;
+            }
+        }
+    }
+}

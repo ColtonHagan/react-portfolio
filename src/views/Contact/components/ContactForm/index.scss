@@ -2,22 +2,29 @@
 
 .contact-form {
     ul {
-        .single-line {
+        padding-left: 0;
+
+        #single-line {
             display: flex;
             flex-direction: row;
+
             li {
                 width: 50%;
             }
+
             .right {
                 margin-left: .5rem;
             }
         }
+
         li {
             list-style: none;
             margin-top: .8rem;
             overflow: hidden;
 
-            input[type="text"], input[type="email"], textarea {
+            input[type="text"],
+            input[type="email"],
+            textarea {
                 width: 100%;
                 background-color: v.$background-secondary-color;
                 border: none;
@@ -28,12 +35,41 @@
                 color: v.$text-color;
                 border-radius: .5rem;
             }
+
             textarea {
                 height: 8rem;
             }
+
             .flat-button {
                 font-size: 2rem;
             }
+
+            // Google autofill fixing
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 30px v.$background-secondary-color inset !important;
+            }
+
+            input:-webkit-autofill {
+                -webkit-text-fill-color: white !important;
+            }
         }
+    }
+}
+
+// Popup
+.alert-popup {
+    background-color: v.$background-secondary-color;
+    color: v.$text-color;
+}
+
+.alert-icon {
+    border-color: v.$primary-color !important;
+
+    .swal2-success-line-tip,
+    .swal2-success-line-long {
+        background-color: v.$primary-color !important;
     }
 }

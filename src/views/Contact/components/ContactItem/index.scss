@@ -8,13 +8,16 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
     .title-section {
         font-weight: 600;
+
         .logo {
             color: v.$primary-color;
             margin-right: 1rem;
         }
     }
+
     .text-section {
         font-family: sans-serif;
     }
