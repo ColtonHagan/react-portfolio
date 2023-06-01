@@ -24,16 +24,16 @@ const Sidebar = () => {
                 <img src={logo} alt="logo" />
             </Link>
             <nav className={menu ? "mobile" : ""} onClick={() => setMenu(false)}>
-                <NavLink exact={true} id="home-link" to="/">
+                <NavLink exact={+true} id="home-link" to="/">
                     <FontAwesomeIcon icon={faHome} />
                 </NavLink>
-                <NavLink exact={true} id="about-link" to="/about">
+                <NavLink exact={+true} id="about-link" to="/about">
                     <FontAwesomeIcon icon={faUser} />
                 </NavLink>
-                <NavLink exact={true} id="projects-link" to="/projects">
+                <NavLink exact={+true} id="projects-link" to="/projects">
                     <FontAwesomeIcon icon={faArchive} />
                 </NavLink>
-                <NavLink exact={true} id="contact-link" to="/contact">
+                <NavLink exact={+true} id="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} />
                 </NavLink>
             </nav>
