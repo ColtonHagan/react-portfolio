@@ -64,36 +64,43 @@
         }
     }
 }
+
 @media screen and (max-width: 450px) {
     .contact-page #contact-wrapper #contact-information .logos {
-        display: none ;
+        display: none;
     }
 }
+
 @media screen and (max-width: 400px) {
     .contact-page {
         height: 100vh;
     }
 }
+
 @media screen and (max-height:650px) {
     .contact-page {
         margin-top: 12vh;
     }
 }
+
 @media screen and (max-height:520px) {
     .contact-page {
         margin-top: 24vh;
     }
 }
+
 @media screen and (max-height:440px) {
     .contact-page {
         margin-top: 36vh;
     }
 }
+
 @media screen and (max-height:380px) {
     .contact-page {
         margin-top: 50vh;
     }
 }
+
 @media screen and (max-height:340px) {
     .contact-page {
         margin-top: 60vh;
