@@ -2,7 +2,7 @@
   "homepage": "https://ColtonHagan.github.io/react-portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@react-pdf/renderer": "^3.1.9",
