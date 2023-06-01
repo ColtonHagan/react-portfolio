@@ -1,2 +1,2 @@
 # Website
-[My React Portfolio](https://coltonhagan.github.io/react-portfolio/)
+[My React Portfolio](https://ColtonHagan.github.io/react-portfolio/)
