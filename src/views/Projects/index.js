@@ -14,6 +14,7 @@ import portfolio from "../../assets/images/portfolio.jpg";
 import deadwood from "../../assets/images/deadwood.jpg";
 import pagewise from "../../assets/images/PageWise.png";
 import bestreads from "../../assets/images/bestreads.png";
+import bytebrawn from "../../assets/images/bytebrawn.png";
 import pokemon from "../../assets/images/pokemon.jpg"
 import AnimatedLetters from "../../components/AnimatedLetters";
 
@@ -23,6 +24,11 @@ const Projects = () => {
       title: "This portfolio website",
       github: "https://github.com/ColtonHagan/react-portfolio",
       img: portfolio,
+    },
+    {
+      title: "ByteBrawn workout website",
+      github: "https://github.com/ColtonHagan/ByteBrawn",
+      img: bytebrawn,
     },
     {
       title: "Deadwood board game",
