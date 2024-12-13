@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.1d4c417d.css",
+    "main.js": "/react-portfolio/static/js/main.dabd3a5b.js",
+    "static/js/787.cf482a7c.chunk.js": "/react-portfolio/static/js/787.cf482a7c.chunk.js",
+    "static/media/about-page-image.png": "/react-portfolio/static/media/about-page-image.c49763fdcd092a7b9975.png",
+    "static/media/bestreads.png": "/react-portfolio/static/media/bestreads.eca2bf5d7174a5107801.png",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.db781871784f38a58595.pdf",
+    "static/media/home-page-image.png": "/react-portfolio/static/media/home-page-image.2e4ee65bd9a2ab7743a2.png",
+    "static/media/bytebrawn.png": "/react-portfolio/static/media/bytebrawn.c8f7e897bdb078e26b6b.png",
+    "static/media/deadwood.jpg": "/react-portfolio/static/media/deadwood.9c248c70b2e1a79760cc.jpg",
+    "static/media/pokemon.jpg": "/react-portfolio/static/media/pokemon.47fe4371998dc55bd37a.jpg",
+    "static/media/helvetica-neu.ttf": "/react-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/PageWise.png": "/react-portfolio/static/media/PageWise.a4c687ebe7a963aaad93.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/react-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/slick.svg": "/react-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/react-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/react-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/react-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/react-portfolio/index.html",
+    "main.1d4c417d.css.map": "/react-portfolio/static/css/main.1d4c417d.css.map",
+    "main.dabd3a5b.js.map": "/react-portfolio/static/js/main.dabd3a5b.js.map",
+    "787.cf482a7c.chunk.js.map": "/react-portfolio/static/js/787.cf482a7c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d4c417d.css",
+    "static/js/main.dabd3a5b.js"
+  ]
+}
